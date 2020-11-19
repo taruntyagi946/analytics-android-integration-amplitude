@@ -20,7 +20,7 @@ afterEvaluate { project ->
   uploadArchives {
     repositories {
       mavenDeployer {
-        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+        ///beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
         def userName = System.getenv("NEXUS_USERNAME")
         def password = System.getenv("NEXUS_PASSWORD")
